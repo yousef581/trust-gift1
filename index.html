@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Manar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdf1f4;
+    }
+    .page {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .page-1 {
+      background-color: #fff0f5;
+    }
+    .page-2 {
+      background-color: #fff;
+      display: none;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+      color: #d6336c;
+    }
+    p {
+      font-size: 1.2em;
+      color: #444;
+      max-width: 700px;
+      margin-bottom: 1.5em;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #d6336c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #c2185b;
+    }
+    iframe {
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .footer {
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="page page-1" id="page1">
+    <h1>I'm not here to tie you down</h1>
+    <p>I just want your trust… and your comfort when I'm around.</p>
+    <button onclick="showPage2()">Next</button>
+  </div>  <div class="page page-2" id="page2">
+    <h1>To Manar</h1>
+    <p>
+      Manar...<br />
+      There are feelings we carry that words often fail to express.<br />
+      But your presence in my life has always meant a lot...<br />
+      Even if we don’t talk all the time,<br />
+      I see you as a dear sister.<br />
+      All I wish for is to earn your trust,<br />
+      and always be the one you can talk to —<br />
+      no judgment, no pressure…<br />
+      just a heart that listens,<br />
+      respects you, understands you,<br />
+      and stands by you without needing to be asked.
+    </p>
+    <button onclick="window.open('https://youtu.be/6k8cpUkKK4c?si=45eKFRTTGc5Ao81D', '_blank')">Play Song</button>
+    <div class="footer">Gifted with care – 19 July 2025</div>
+  </div>  <script>
+    function showPage2() {
+      document.getElementById('page1').style.display = 'none';
+      document.getElementById('page2').style.display = 'flex';
+    }
+  </script></body>
+</html>
